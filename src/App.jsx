@@ -6,20 +6,9 @@ import AppMovies from './components/services/service';
 
 
 
-//function App() {
-
-//  return (
-//    <>
-//     <SidebarItem/>
-//    </>
-//  )
-//
-
-//export default App
-
 function App() {
   return (
-   
+  //  O routes precisa estar em um arquivo separado
     <Router>
       <div className="App">
         <Routes>

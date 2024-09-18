@@ -5,7 +5,7 @@ function Header() {
     return (
       <header>
         <NavbarItem />
-        <h1>Catálogo de Filmes</h1>
+        <h1>MEU FAVORITOS</h1>
         <p>Pessoal Construir a listagem abaixo</p>
         <p>Odeio css. Acertem o menu se achare valido manter</p>
         <p>Ou deletem se nao gostaram</p>

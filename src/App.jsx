@@ -1,12 +1,10 @@
-import { useState } from 'react'
-//import reactLogo from './assets/react.svg'
-//import viteLogo from '/vite.svg'
-//import './App.css'
-//import{SidebarItem} from './components/Sidebar/sidebarIndex'
-
+import { useState, useEffect } from 'react'
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Header from './components/Header/headerIndex'; 
-import HomeItem from './components/Home/homeindex';
+import HomeItem from './pages/Home/homeindex';
+import AppMovies from './components/services/service';
+
+
 
 //function App() {
 
@@ -15,12 +13,13 @@ import HomeItem from './components/Home/homeindex';
 //     <SidebarItem/>
 //    </>
 //  )
-//}
+//
 
 //export default App
 
 function App() {
   return (
+   
     <Router>
       <div className="App">
         <Routes>
@@ -29,8 +28,8 @@ function App() {
         </Routes>
       </div>
     </Router>
+    
   );
 }
-
 
 export default App;

@@ -10,7 +10,7 @@ export function HomeItem() {
 
   return (
     <div className='logoimg'>
-      
+      <NavbarItem />
       <AppMovies />
       
     </div>

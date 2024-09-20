@@ -15,13 +15,12 @@
   padding-top: 50px;
   
 }
-
-.homeTitle h1{
-font-size: 80px;
-padding-top: 50px;
-text-shadow: #750c0c;
+.homeTitle h1 {
+  font-size: 40px;
+  padding-top: 50px;
+ display: flex;
+ text-align: left;
 }
-
 
 
 .searchInput {

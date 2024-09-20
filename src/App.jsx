@@ -13,7 +13,9 @@ function App() {
       <div className="App">
         <Routes>
           <Route path="/" element={<HomeItem />} />
+          {/* <Route path="movie/:id" element={<MovieDetails />} /> */}
           <Route path="/header" element={<Header />} />
+          <Route path="/details" element={<Details />} />
         </Routes>
       </div>
     </Router>

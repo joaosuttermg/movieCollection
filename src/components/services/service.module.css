@@ -8,9 +8,24 @@
 .title {
   font-size: 24px;
   margin-bottom: 10px;
+  background: linear-gradient(to right, #750c0c, #fcacac);
+  -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  text-align: center;
+  
+  
 }
 
+
 .searchInput {
+  width: 300px;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: none;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  background-color: #b4b4b4;
+  transition: background-color 0.3s ease;
   /* align-items: center; */
 }
 

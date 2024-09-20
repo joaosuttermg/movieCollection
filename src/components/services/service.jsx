@@ -2,9 +2,16 @@ import { useState, useEffect } from "react";
 import axios from "axios";
 import styles from "./service.module.css";
 
+
+
 function AppMovies() {
   const [movies, setMovies] = useState([]);
   const [searchTerm, setSearchTerm] = useState("");
+
+  function detalhes(){
+   <Link to="">
+   </Link>
+  }
 
   useEffect(() => {
     const fetchMovies = async () => {
@@ -31,7 +38,9 @@ function AppMovies() {
           onChange={(e) => setSearchTerm(e.target.value)}
           placeholder="Digite o nome do filme"
         />
+        
       </div>
+
 
       <div className={styles.movieContainer}>
         {movies && movies.length > 0 ? (
@@ -44,6 +53,8 @@ function AppMovies() {
                 src={`https://image.tmdb.org/t/p/w200${movie.poster_path}`}
                 alt={movie.title}
               />
+              {/* <Button text='Adicionar aos favoritos' img /> */}
+              <button onClick={detalhes} > Detalhes </button>
             </div>
           ))
         ) : (
@@ -55,3 +66,4 @@ function AppMovies() {
 }
 
 export default AppMovies;
+

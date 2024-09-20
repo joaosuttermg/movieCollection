@@ -9,10 +9,12 @@ export function HomeItem() {
   const navigate = useNavigate();
 
   return (
-    <div className='logoimg'>
+    <div className="logoimg">
       <NavbarItem />
+      <div className="homeTitle">
+        <h1> REACT MOVIES </h1>
+      </div>
       <AppMovies />
-      
     </div>
   );
 }

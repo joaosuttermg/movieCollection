@@ -1,9 +1,8 @@
 import { useState, useEffect } from "react";
 import axios from "axios";
 import styles from "./service.module.css";
-// import Details from './pages/MovieDetails/movieDetails';
-
-
+import FavoriteAction from './favorite';
+// import Details from ''../src/pages/MovieDetails/movieDetails'';
 
 
 function AppMovies() {
@@ -60,7 +59,8 @@ function AppMovies() {
                 alt={movie.title}
               />
               {/* <Button text='Adicionar aos favoritos' img /> */}
-              <button onClick={Details}> Detalhes </button>
+              {/* <button onClick={Details}> Detalhes </button>*/}
+              <FavoriteAction movie={movie} />
             </div>
           ))
         ) : (

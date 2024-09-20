@@ -9,7 +9,7 @@ function AppMovies() {
   const [searchTerm, setSearchTerm] = useState("");
 
   function detalhes(){
-   <Link to="">
+   <Link to="/details">
    </Link>
   }
 

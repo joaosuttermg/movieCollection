@@ -6,7 +6,7 @@ const Details = () => {
     const [movie, setMovie] = useState(null)
 
     const getMovie = async(url) => {
-        const result = aait fetch(url)
+        const result = await fetch(url)
         const data = await result.json()
 
         setMovie(data)
@@ -19,11 +19,23 @@ const Details = () => {
 
     return (
         <div>
-            {movie && (
+            {/* {movie && (
                 <h1>{movie.title}</h1>
                 <p>{movie.overview}</p>
                 <img src={`https://image.tmdb.org/t/p/w500${movie.poster_path}`} alt={movie.title} />
-            )}
+            )} */}
+        {movies && movies.length > 0 ? (
+          movies.map((movie) => (
+            <div className={styles.movies} key={movie.id}>
+              <h2 className={styles.movieTitle}>{movie.title}</h2>
+              <p className={styles.movieDate}>{movie.release_date}</p>
+              <img
+                className={styles.movieImg}
+                src={`https://image.tmdb.org/t/p/w200${movie.poster_path}`}
+                alt={movie.title}
+                
+              />
+        
         </div>
     )
 }

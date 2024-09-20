@@ -10,15 +10,22 @@
   margin-bottom: 10px;
   background: linear-gradient(to right, #750c0c, #fcacac);
   -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+  -webkit-text-fill-color: transparent;
   text-align: center;
-  
+  padding-top: 50px;
   
 }
 
+.homeTitle h1{
+font-size: 80px;
+padding-top: 50px;
+text-shadow: #750c0c;
+}
+
+
 
 .searchInput {
-  width: 300px;
+  width: 400px;
   padding: 10px;
   margin-bottom: 10px;
   border: none;
@@ -26,7 +33,6 @@
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
   background-color: #b4b4b4;
   transition: background-color 0.3s ease;
-  /* align-items: center; */
 }
 
 .movies {

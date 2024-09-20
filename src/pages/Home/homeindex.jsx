@@ -11,9 +11,6 @@ export function HomeItem() {
   return (
     <div className="logoimg">
       <NavbarItem />
-      <div className="homeTitle">
-        <h1> REACT MOVIES </h1>
-      </div>
       <AppMovies />
     </div>
   );

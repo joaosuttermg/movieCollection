@@ -1,6 +1,8 @@
 import { useState, useEffect } from "react";
 import axios from "axios";
 import styles from "./service.module.css";
+// import Details from './pages/MovieDetails/movieDetails';
+
 
 
 
@@ -8,7 +10,7 @@ function AppMovies() {
   const [movies, setMovies] = useState([]);
   const [searchTerm, setSearchTerm] = useState("");
 
-  function detalhes(){
+  function details(){
    <Link to="/details">
    </Link>
   }
@@ -28,6 +30,12 @@ function AppMovies() {
 
   return (
     <div className={styles.appContainer}>
+      <div className={styles.homeTitle}>
+        <h1>
+          {" "}
+          reactMovies <i className="ph ph-film-reel"></i>
+        </h1>
+      </div>
       <div className={styles.form}>
         <h2 className={styles.title}>Busca de Filmes</h2>
         <input
@@ -38,9 +46,7 @@ function AppMovies() {
           onChange={(e) => setSearchTerm(e.target.value)}
           placeholder="Digite o nome do filme"
         />
-        
       </div>
-
 
       <div className={styles.movieContainer}>
         {movies && movies.length > 0 ? (
@@ -54,7 +60,7 @@ function AppMovies() {
                 alt={movie.title}
               />
               {/* <Button text='Adicionar aos favoritos' img /> */}
-              <button onClick={detalhes} > Detalhes </button>
+              <button onClick={Details}> Detalhes </button>
             </div>
           ))
         ) : (

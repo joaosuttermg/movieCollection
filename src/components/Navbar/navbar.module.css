@@ -1,5 +1,6 @@
 .logo {
-  height: 60px;
+  height: 90px;
+  padding-top: 20px;
 }
 
 .logo:hover {
@@ -20,12 +21,12 @@
   font-weight: 1000;
   text-shadow:
       0 0 5px #fff,
-      0 0 10px rgb(255, 0, 0),
+      /* 0 0 10px rgb(255, 0, 0),
       0 0 20px #38a5d8,
       0 0 30px #59ff38,
       0 0 40px #ff6600,
       0 0 50px #ff0000,
-      0 0 60px #ff0062;
+      0 0 60px #ff0062; */
 
 }
 
@@ -45,15 +46,20 @@
     list-style: none;
     display: -webkit-inline-box;
     display: flex;
-      flex-direction: column;
+    flex-direction: column;
+    gap: 50px;
   }
   
+.navList li a{
+  color: #ffffff;
+  display: flex;
+  gap: 10px;
+}
+
   .navItem{
     margin-left: 20px;
    
   }
-
-  
 
   .navItem a {
     color: white;
@@ -66,6 +72,7 @@
   .navItem i {
     margin-right: 8px;
     color: inherit;
+    
   }
   
   .navItem a:hover {

@@ -18,14 +18,14 @@ const NavbarItem = () => {
       <ul className={styles.navList}>
         <li >
           <Link to="/">
-            <i class="ph ph-house"></i> 
-            Início
+            <i className="ph ph-house"></i> 
+            Home
           </Link>
         </li>
         <li >
           <Link to="/header">
-            <i class="ph ph-star"></i>
-            Favoritos
+            <i className="ph ph-star"></i>
+                  Favoritos
           </Link>
         </li>
       </ul>

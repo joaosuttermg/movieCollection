@@ -3,7 +3,7 @@ import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Header from './components/Header/headerIndex'; 
 import HomeItem from './pages/Home/homeindex';
 import AppMovies from './components/services/service';
-// import Details from './pages/MovieDetails/movieDetails';
+import Details from './pages/MovieDetails/movieDetails';
 
 
 function App() {
@@ -15,7 +15,7 @@ function App() {
           <Route path="/" element={<HomeItem />} />
           {/* <Route path="movie/:id" element={<MovieDetails />} /> */}
           <Route path="/header" element={<Header />} />
-          {/* <Route path="/details" element={<Details />} /> */}
+          <Route path="/details" element={<Details />} />
         </Routes>
       </div>
     </Router>

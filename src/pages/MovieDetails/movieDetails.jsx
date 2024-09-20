@@ -24,6 +24,7 @@ const Details = () => {
                 <p>{movie.overview}</p>
                 <img src={`https://image.tmdb.org/t/p/w500${movie.poster_path}`} alt={movie.title} />
             )} */}
+        <div className={styles.movieContainer}>
         {movies && movies.length > 0 ? (
           movies.map((movie) => (
             <div className={styles.movies} key={movie.id}>
@@ -33,8 +34,14 @@ const Details = () => {
                 className={styles.movieImg}
                 src={`https://image.tmdb.org/t/p/w200${movie.poster_path}`}
                 alt={movie.title}
-                
               />
+              
+            </div>
+          ))
+        ) : (
+          <p>Nenhum filme encontrado.</p>
+        )}
+      </div>
         
         </div>
     )

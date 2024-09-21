@@ -1,5 +1,10 @@
 import { useState, useEffect} from 'react'
 import { useParams} from 'react-router-dom'
+import AppMovies from '../../components/services/service'
+import styles from '../../components/services/service.module.css'
+
+const moviesURL = import.meta.env.VITE_API
+const apiKEY = import.meta.env.VITE_API_KEY
 
 const Details = () => {
     const {id} = useParams()
@@ -13,8 +18,8 @@ const Details = () => {
     }
 
     useEffect(() => {
-        const movieUrl = `https://api.themoviedb.org/3/movie/${id}?api_key=YOUR_API_KEY&language=en-US`
-        getMovie(url)
+        const movieUrl = `${moviesURL}${id}?${apiKEY}`;
+        getMovie(movieUrl)
     }, [id])
 
     return (
@@ -25,8 +30,9 @@ const Details = () => {
                 <img src={`https://image.tmdb.org/t/p/w500${movie.poster_path}`} alt={movie.title} />
             )} */}
         <div className={styles.movieContainer}>
-        {movies && movies.length > 0 ? (
-          movies.map((movie) => (
+        {movie &&  (
+            <>
+            <AppMovies movie={movie} />
             <div className={styles.movies} key={movie.id}>
               <h2 className={styles.movieTitle}>{movie.title}</h2>
               <p className={styles.movieDate}>{movie.release_date}</p>
@@ -37,10 +43,9 @@ const Details = () => {
               />
               
             </div>
-          ))
-        ) : (
-          <p>Nenhum filme encontrado.</p>
-        )}
+            </>
+          )
+        }
       </div>
         
         </div>

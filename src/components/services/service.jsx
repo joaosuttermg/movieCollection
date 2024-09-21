@@ -2,16 +2,17 @@ import { useState, useEffect } from "react";
 import axios from "axios";
 import styles from "./service.module.css";
 import FavoriteAction from './favorite';
-// import Details from ''../src/pages/MovieDetails/movieDetails'';
+import { useNavigate } from "react-router-dom";
+import Details from "../../pages/MovieDetails/movieDetails";
 
 
 function AppMovies() {
   const [movies, setMovies] = useState([]);
   const [searchTerm, setSearchTerm] = useState("");
+  const navigate = useNavigate();
 
-  function details(){
-   <Link to="/details">
-   </Link>
+  function details(movieId){
+   navigate(`/movie/${movieId}`);
   }
 
   useEffect(() => {
@@ -59,8 +60,10 @@ function AppMovies() {
                 alt={movie.title}
               />
               {/* <Button text='Adicionar aos favoritos' img /> */}
-              {/* <button onClick={Details}> Detalhes </button>*/}
-              <FavoriteAction movie={movie} />
+              
+              <button type="submit" onClick={() => details(movie.id)}> Detalhes </button>
+              <p><FavoriteAction movie={movie} /></p>
+              
             </div>
           ))
         ) : (

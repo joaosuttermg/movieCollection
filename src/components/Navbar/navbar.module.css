@@ -1,6 +1,23 @@
-.logo {
-  height: 90px;
-  padding-top: 20px;
+.container{
+  height: 100%;
+  position: fixed;
+  background: linear-gradient(to right, #750c0c, #e28383);
+  align-items: center;
+  text-align: center;
+ 
+}
+
+.toggle {
+width: 0;
+
+
+}
+.toggle i {
+  
+  color: white;
+  font-size: 2em;
+  cursor: pointer;
+  padding: 125px;
 }
 
 .logo:hover {
@@ -20,55 +37,44 @@
   -webkit-text-fill-color: transparent;
   font-weight: 1000;
   margin-top: -30px;
-  text-shadow:
-      0 0 5px #fff,
-      /* 0 0 10px rgb(255, 0, 0),
-      0 0 20px #38a5d8,
-      0 0 30px #59ff38,
-      0 0 40px #ff6600,
-      0 0 50px #ff0000,
-      0 0 60px #ff0062; */
+  padding: 30px;
 
+}  
+
+.ul li{
+  list-style: none;
+  padding: 20px 0px;
 }
 
 
-  
-  .navList {
-    list-style: none;
-    display: -webkit-inline-box;
-    display: flex;
-    flex-direction: column;
-    gap: 50px;
-  }
-  
-.navList li a{
-  color: #ffffff;
+.navbarContainer{
   display: flex;
-  gap: 10px;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  
 }
 
-
-  .navItem a {
-    color: white;
-    text-decoration: none;
-    padding: 10px 20px;
-    display: flex;
-    flex-direction: column;
-  }
-
-  .navItem i {
-    margin-right: 8px;
-    color: inherit;
-    
-  }
+.navbarContainer li a{
+  color: #ffffff;
+  font-size: 20px;
   
-  .navList a:hover {
+}
+
+  .navbarContainer a:hover {
     background-color: #575757;
     border-radius: 4px;
-    height: 40px;
+    height: 80px;
     width: 100px;
     align-items: center;
   }
+
+  .navbar img {
+    width: 80px;
+    height: auto;
+  
+  }
+
   
   @media (max-width: 768px) {
     .navList {

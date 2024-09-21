@@ -1,0 +1,82 @@
+.appContainer {
+  display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    /* estilizaçao pra deixar os filmes centralizados */
+}
+
+.title {
+  font-size: 24px;
+  margin-bottom: 10px;
+  background: linear-gradient(to right, #750c0c, #fcacac);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-align: center;
+  padding-top: 50px;
+  
+}
+.homeTitle h1 {
+  font-size: 40px;
+  padding-top: 50px;
+ display: flex;
+ text-align: left;
+}
+
+
+.searchInput {
+  width: 400px;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: none;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  background-color: #b4b4b4;
+  transition: background-color 0.3s ease;
+  
+}
+
+.movies {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.movieContainer {
+  display: grid;
+  grid-template-columns: repeat(3, 0.5fr);
+  align-items: center;
+  gap: 50px;
+  padding: 0 2rem;
+  
+}
+
+.movieTitle {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 20px;
+}
+
+.movieDate {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.movieImg {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.detailsbtn {
+  font-family: "Inconsolata", monospace;
+    background-color:rgb(128, 209, 178) ;
+    color: rgb(40, 87, 99);
+    font-weight: 900;
+    padding: 10px;
+    margin-top: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}

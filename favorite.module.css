@@ -1,0 +1,11 @@
+.favbutton button {
+    font-family: "Inconsolata", monospace;
+    color: rgb(117, 67, 32);
+    font-weight: 900;
+    padding: 10px;
+    margin-top: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+
+}
